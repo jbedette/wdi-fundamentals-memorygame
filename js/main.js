@@ -7,7 +7,7 @@ var cards = [
 var cardsInPlay = [];
 
 function flipCard() {
-  this.getAttribute('cardId');
+  let cardId = this.getAttribute('data-id');
   console.log("User flipped " + cards[cardId].rank);
   console.log(cards[cardId].suit);
   console.log(cards[cardId].cardImage);
